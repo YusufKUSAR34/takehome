@@ -1,0 +1,22 @@
+[
+  {
+    "cityName": "Istanbul",
+    "temperature": "8",
+    "unit": "celsius"
+  },
+  {
+    "cityName": "Prague",
+    "temperature": "10",
+    "unit": "celsius"
+  },
+  {
+    "cityName": "Los Angeles",
+    "temperature": "9",
+    "unit": "celsius"
+  },
+  {
+    "cityName": "Kiev",
+    "temperature": "-5",
+    "unit": "celsius"
+  }
+]

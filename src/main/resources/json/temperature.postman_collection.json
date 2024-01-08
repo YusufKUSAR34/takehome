@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "3d69de1c-f6d6-4459-9f41-91018c66fe87",
+		"name": "temperature",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post-success-temperature",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\" : \"Istanbul\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/temperature",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temperature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-failure-temperature",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\" : \"Istanbul\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/temperature",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temperature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-success-temperature",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/temperature?q=Istanbul",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temperature"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Istanbul"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-failure-temperature",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/temperature?q=xxxxx",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"temperature"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "xxxxx"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
